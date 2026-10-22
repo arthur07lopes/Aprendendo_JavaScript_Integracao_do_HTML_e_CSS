@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT 1° PROJECT</title>
+    <script src="jogoclick.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Jogo dos cliques com JAVASCRIPT</h1>
+        <p>Investigue o sinal e descubra quem está do outro lado.</p>
+    </header>
+    <main>
+        <div class="vinheta" aria-hidden="true"></div>
+        <section class="painel" aria-label="Jogo de investigação">
+            <div class="acoes">
+                <button class="btn-aumento" type="button" aria-label="Investigar o sinal">INVESTIGAR</button>
+                <button class="btn-reset" id="btn-reset" type="button">REINICIAR</button>
+            </div>
+            <div class="contador" aria-live="polite">
+                Cliques: <span id="valor">0</span> / 10
+            </div>
+            <p class="status" id="status" aria-live="polite">SINAL ESTÁVEL</p>
+            <section class="cena-final" id="cena-final" aria-live="polite" aria-label="Mensagem de Providence">
+                <img class="providence" src="imagens/providence.jpg" alt="Providence, personagem do jogo">
+                <p class="caixa-dialogo" id="fala-providence">Olá! :D</p>
+                <p class="caixa-dialogo mensagem-conclusao" id="mensagem-conclusao"><strong>Parabéns :D Você completou a missão!</strong></p>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
